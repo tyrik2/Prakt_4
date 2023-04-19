@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Arthur_Prak_4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Пример 1" Height="350" Width="520"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Comic Sans MS"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Введите значения переменных:"/>
+        <Label Grid.Row="1" Content="Введите первое число:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtA" Margin="5"/>
+
+        <Label Grid.Row="2" Content="Введите второе число:"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtB" Margin="5"/>
+
+        <Label Grid.Row="3" Content="номер действия (1 — сложение, 2 — вычитание, 3 — умножение, 4 — деление):"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtC" Margin="5"/>
+
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Вычислить" Click="btnChange_Click" Margin="5"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="Выход" Click="Button_Click" Margin="5"/>
+
+        <Label Grid.Row="6" Content="" x:Name="lblNewValues" Margin="5"/>
     </Grid>
 </Window>
