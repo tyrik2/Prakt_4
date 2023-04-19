@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Arthur_Prak_4"
         mc:Ignorable="d"
-        Title="Пример 1" Height="350" Width="520"
+        Title="Задание 1" Height="350" Width="520"
         WindowStartupLocation="CenterScreen"
         FontFamily="Comic Sans MS"
         WindowStyle="ToolWindow"
